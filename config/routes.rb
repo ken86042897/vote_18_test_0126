@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :article_attachments
   mount Ckeditor::Engine => '/ckeditor'
   root 'articles#homepage'
   devise_for :members
